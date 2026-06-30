@@ -1,12 +1,12 @@
 {:paths ["src"]
  ;; Reduced-order crash/structural solver on the shared, purpose-split libs.
- ;; Registers :rom-crash on the cae-solver-clj contract; replaces the closed-form
+ ;; Registers :rom-crash on the cae-solver contract; replaces the closed-form
  ;; structural SF proxy in vehicle-design-actor/simverify with an energy-balance
  ;; crush model. A high-fidelity kami-cae explicit FEA registers :explicit-fea
  ;; on the same contract later.
- :deps {io.github.com-junkawasaki/datom-clj       {:local/root "../datom-clj"}
-        io.github.com-junkawasaki/vphysics-clj    {:local/root "../vphysics-clj"}
-        io.github.com-junkawasaki/cae-solver-clj  {:local/root "../cae-solver-clj"}}
+ :deps {io.github.kotoba-lang/datom       {:local/root "../datom"}
+        io.github.kotoba-lang/vphysics    {:local/root "../vphysics"}
+        io.github.kotoba-lang/cae-solver  {:local/root "../cae-solver"}}
  :aliases
  {:test {:extra-paths ["test"]
          :extra-deps {io.github.cognitect-labs/test-runner
