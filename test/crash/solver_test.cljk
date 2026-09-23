@@ -1,5 +1,5 @@
 (ns crash.solver-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [crash.solver :as crash]
             [cae.solver :as cae]))
 
